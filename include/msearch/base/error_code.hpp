@@ -26,11 +26,11 @@ enum class ErrorCode {
     kConfigInvalidValue,
 
     // 协议模块错误
-    kInvalidMagic,
-    kUnsupportedVersion,
-    kUnknownCommand,
-    kBodyTooLarge,
-    kJsonParseError,
+    kProtocolInvalidMagic,
+    kProtocolUnsupportedVersion,
+    kProtocolUnknownCommand,
+    kProtocolBodyTooLarge,
+    kProtocolJsonParseError,
 
     // 索引模块错误
     kIndexNotReady,

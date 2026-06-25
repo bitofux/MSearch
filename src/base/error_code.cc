@@ -32,16 +32,16 @@ const char* ToString(ErrorCode code) {
             return "ConfigInvalidValue";
 
         // 协议模块错误
-        case ErrorCode::kInvalidMagic:
-            return "InvalidMagic";
-        case ErrorCode::kUnsupportedVersion:
-            return "UnsupportedVersion";
-        case ErrorCode::kUnknownCommand:
-            return "UnknownCommand";
-        case ErrorCode::kBodyTooLarge:
-            return "BodyTooLarge";
-        case ErrorCode::kJsonParseError:
-            return "JsonParseError";
+        case ErrorCode::kProtocolInvalidMagic:
+            return "ProtocolInvalidMagic";
+        case ErrorCode::kProtocolUnsupportedVersion:
+            return "ProtocolUnsupportedVersion";
+        case ErrorCode::kProtocolUnknownCommand:
+            return "ProtocolUnknownCommand";
+        case ErrorCode::kProtocolBodyTooLarge:
+            return "ProtocolBodyTooLarge";
+        case ErrorCode::kProtocolJsonParseError:
+            return "ProtocolJsonParseError";
 
         // 索引模块错误
         case ErrorCode::kIndexNotReady:
